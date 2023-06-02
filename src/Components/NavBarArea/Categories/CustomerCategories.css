@@ -1,0 +1,84 @@
+.CustomerCategories {
+	background-color:  rgba(131, 127, 127, 0.368);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.CustomerCategories ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 0px;
+}
+.CustomerCategories>ul li{
+    list-style: none;
+    border-radius: 60px;
+    position: relative;
+    display: inline-block;
+}
+.icon{
+    width: 45px;
+}
+.custToolTip{
+    visibility: hidden;
+    width: auto;
+    background: linear-gradient(to right bottom, rgba(243, 243, 243, 0.9),
+        rgba(255, 255, 255, 0.7));
+    color: rgb(131, 127, 127);
+    font-size: 17px;
+    font-weight: 400;
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    padding: 4px;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.custToolTip::after{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent rgba(255, 255, 255, 0.749) transparent;
+}
+.custToolT:hover .custToolTip{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive */
+@media screen and (max-width: 820px), (max-height: 800px){
+    .CustomerCategories ul{
+        gap: 30px;
+    }
+    .icon{
+        width: 35px;
+    }
+}
+@media screen and (max-width: 400px){
+    .CustomerCategories ul{
+        gap: 5px;
+    }
+    .customerCategories ul{
+        gap: 5px;
+    }
+    .icon{
+        width: 25px;
+    }
+}
+@media screen and (max-height: 450px) {
+    .customerCategories ul{
+        gap: 10px;
+    }
+    .icon{
+        width: 25px;
+    }
+}

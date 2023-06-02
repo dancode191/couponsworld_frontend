@@ -1,0 +1,50 @@
+.AddCompany{
+    margin: 10px;
+    padding: 20px;
+    width: 500px;
+    height: 400px;
+}
+.AddCompany h2{
+    text-align: center;
+    font-size: 30px;
+}
+.AddCompany form{
+    line-height: 15px;
+}
+.AddCompany label{
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    display: inline-block;
+    margin-top: 10px;
+}
+.AddCompany input{
+    margin: 5px 0px 5px 0px;
+}
+
+.AddCompany button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px 0px;
+    padding: 5px 20px;
+    color: #000;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.addCompError{
+    color: red;
+}
+
+/* Responsive */
+@media screen and (max-width: 820px), (max-height: 800px){
+    .AddCompany{
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width: 400px){
+    .AddCompany{
+        width: 380px;
+    }
+}

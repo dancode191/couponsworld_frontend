@@ -1,0 +1,22 @@
+.VerifyCustomerEmail {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) ;
+    text-align: center;
+}
+.title{
+    font-family: Poppins;
+    font-size: 30px;
+    margin: 50px 0px;
+}
+.verifyEmailBtn{
+    padding: 5px 10px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.1));
+    border-radius: 30px;
+    border:2px solid #fff;
+}

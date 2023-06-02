@@ -1,0 +1,38 @@
+.companySignUp {
+	width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.companySignUpScreen{
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family:'Poppins', sans-serif;
+    margin: 10px;
+}
+.companySignUpScreen form{
+    margin-left: 20px;
+}
+.joinCompanyTitle{
+    text-align: center;
+}
+.companySignUpScreen label{
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    display: inline-block;
+    margin-top: 10px;
+}
+.companySignUpScreen input{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: none;
+    margin: 5px 0px 10px 0px;
+    padding: 5px 10px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    margin: 5px 0px 5px 0px;
+}

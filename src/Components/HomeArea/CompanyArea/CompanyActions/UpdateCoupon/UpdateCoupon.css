@@ -1,0 +1,31 @@
+.UpdateCompCoupon {
+	margin: 10px;
+    padding: 20px;
+    width: 700px;
+    height: 450px;
+}
+.UpdateCompCoupon h2{
+    text-align: center;
+}
+.UpdateCompCoupon>form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 325px 325px;
+    grid-template-rows: 300px 50px;
+}
+.UpdateCompCoupon>form label{
+    font-family:'Poppins', sans-serif;
+}
+.UpdateCompCoupon>form button{
+    grid-column-start: 1 ;
+    grid-column-end: 3 ;
+    grid-row-start: 2 ;
+    grid-row-end: 3 ;
+    align-self: center;
+    justify-self: flex-start;
+    
+}
+.addCoupError{
+    color: red;
+}

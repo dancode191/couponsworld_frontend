@@ -1,0 +1,87 @@
+.Categories {
+    background-color:  rgba(131, 127, 127, 0.368);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.Categories ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 0px;
+}
+.Categories>ul li{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+.icon{
+    width: 45px;
+}
+.tooltip{
+    visibility: hidden;
+    width: auto;
+    background: linear-gradient(to right bottom, rgba(243, 243, 243, 0.9),
+        rgba(255, 255, 255, 0.7));
+    color: rgb(131, 127, 127);
+    font-size: 17px;
+    font-weight: 400;
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    padding: 4px;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.tooltip::after{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent rgba(255, 255, 255, 0.749) transparent;
+}
+.toolT:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 820px) {
+    .companyCategories ul{
+        gap: 30px;
+    }
+    .icon{
+        width: 35px;
+    }
+}
+@media screen and (max-height: 800px) {
+    .companyCategories ul{
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .companyCategories ul{
+        gap: 5px;
+    }
+    .icon{
+        width: 25px;
+    }
+}
+@media screen and (max-height: 450px) {
+    .companyCategories ul{
+        gap: 10px;
+    }
+    .icon{
+        width: 25px;
+    }
+}

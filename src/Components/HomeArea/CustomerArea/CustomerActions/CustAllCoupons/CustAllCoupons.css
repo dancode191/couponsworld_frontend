@@ -1,0 +1,27 @@
+.custAllCoupons {
+	position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+    overflow-y: scroll;
+}
+.custCouponsDisplay{
+    height: 100%;
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: auto;
+}
+.refreshBtn{
+    margin: 5px 0px 0px 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Responsive */
+@media screen and(max-height: 450px) {
+    
+}

@@ -1,0 +1,43 @@
+.CouponCard {
+    margin: 10px;
+	display: grid;
+    grid-template-columns: repeat(14,1fr);
+}
+.cCCL{
+    margin: 10px;
+    padding: 5px;
+    margin:auto 5px;
+}
+.compCoupCardLine1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.compCoupCardLine2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.compCoupCardLine3{
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.compCoupCardLine4{
+    grid-column-start: 7;
+}
+.compCoupCardLine5{
+    grid-column-start: 8;
+}
+.compCoupCardLine6{
+    grid-column-start: 9;
+}
+.compCoupCardLine7{
+    grid-column-start: 10;
+    margin-left: 3px;
+}
+.compCoupCardLine8{
+    grid-column-start: 11;
+    grid-column-end: 12;
+}
+.compCoupCardLine9{
+    grid-column-start: 13;
+    grid-column-end: 14;
+}

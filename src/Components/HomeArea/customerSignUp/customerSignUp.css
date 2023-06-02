@@ -1,0 +1,38 @@
+.customerSignUp {
+	width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.customerSignUpScreen{
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family:'Poppins', sans-serif;
+    margin: 10px;
+}
+.customerSignUpScreen form{
+    margin-left: 20px;
+}
+.joinCsutomerTitle{
+    text-align: center;
+}
+.customerSignUpScreen label{
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    display: inline-block;
+    margin-top: 10px;
+}
+.customerSignUpScreen input{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: none;
+    margin: 5px 0px 10px 0px;
+    padding: 5px 10px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    margin: 5px 0px 5px 0px;
+}

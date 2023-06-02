@@ -1,0 +1,67 @@
+.AddCustomer {
+	width: 500px;
+    height: 450px;
+    margin: 10px;
+    padding: 20px;
+    /* overflow-y: scroll; */
+}
+
+.AddCustomer form{
+    line-height: 15px;
+}
+
+.addCustTitle{
+    text-align: center;
+    font-size: 30px;
+    margin: 5px 0px;
+}
+.AddCustomer label{
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+.AddCustomer input{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: none;
+    margin: 5px 0px 10px 0px;
+    padding: 5px 10px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    margin: 5px 0px 5px 0px;
+}
+.error{
+    color: red;
+}
+.AddCustbtnDes{
+    padding: 5px 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.1));
+    border-radius: 30px;
+    border:2px solid #fff;
+    font-weight: bold;
+}
+.AddCustbtnDes:hover{
+    background-color:rgba(158, 155, 155, 1);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 820px), (max-height: 800px){
+    .AddCustomer{
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width: 400px){
+    .AddCustomer{
+        width: 380px;
+    }
+}

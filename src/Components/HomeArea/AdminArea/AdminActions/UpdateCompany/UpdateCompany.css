@@ -1,0 +1,30 @@
+.UpdateCompanyMain{
+    width: 400px;
+    height: 350px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 20px 0px 20px 0px;
+}
+
+.compUpdateContainer h2{
+    text-align: center;
+    margin: 0px;
+}
+.compUpdateContainer>form label{
+    display: inline-block;
+    margin: 15px 0px 0px 20px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.compUpdateContainer>form input{
+    margin-left: 20px;
+}
+
+.btnDes{
+    margin: 40px 0px;
+    padding: 5px 20px;
+}
+.updateCompError{
+    color: red;
+    margin-left: 20px;
+}

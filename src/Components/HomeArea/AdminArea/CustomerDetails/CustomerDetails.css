@@ -1,0 +1,92 @@
+.CustomerDetails {
+	height: 100%;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+}
+.cust-container{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+.cust-details{
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+}
+.cust-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+.cust-coupons{
+    width: 100%;
+    margin: 10px;
+}
+.custCoupons-info{
+    display: grid;
+    grid-template-columns: repeat(14,1fr);
+    position: relative;
+}
+.custC1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin:auto 5px;
+}
+.custC2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.custC3{
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.custC4{
+    grid-column-start: 7;
+    grid-column-end: 7;
+    margin:auto 5px;
+}
+.custC5{
+    grid-column-start: 8;
+    grid-column-end: 8;
+    margin:auto 5px;
+}
+.custC6{
+    grid-column-start: 9;
+    grid-column-end: 9;
+    margin:auto 5px;
+}
+.custC7{
+    grid-column-start: 10;
+    grid-column-end: 10;
+    margin-left: 3px;
+}
+.custC8{
+    grid-column-start: 11;
+    grid-column-end: 12;
+}
+.custC9{
+    grid-column-start: 13;
+    grid-column-end: 14;
+}
+.custCoup::before{
+    content: "";
+    width: 3px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-left: -7px;
+    transform: translateY(-50%);
+}
+.custBackBtn{
+    align-self: center;
+}
+
+

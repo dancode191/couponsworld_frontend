@@ -1,0 +1,45 @@
+.Footer {
+    position: relative; 
+    width: 100%;
+    padding: 0px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.mediaContact{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mediaImg{
+    width: 40px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.mediaImg:hover{
+    box-shadow: 2px 2px 10px #fff;
+    transform: translateY(-5%) translateX(-5%);
+}
+.webCreator{
+    text-align: center;
+    width: 30%;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+    font-weight: bolder;
+    color: #fff;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 400px) {
+    .mediaImg{
+        width: 30px;
+    }
+    .webCreator{
+        width: 40%;
+        font-size: 18px;
+    }
+}

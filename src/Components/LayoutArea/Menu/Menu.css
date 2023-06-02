@@ -1,0 +1,177 @@
+.Menu {
+	width: 280px;
+    height: 500px;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.emptyMenu{
+    width: 100%;
+    height: 100%;
+}
+.adminMenu{
+    width: 280px;
+    height: 100%;
+}
+.adminMenu ul{
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-gap: 10px;
+    align-items: center;
+}
+.adminMenu>ul li{
+    list-style: none;
+    width: 75%;
+    padding: 10px 20px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3));
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.adminMenu>ul li:hover{
+    background-color: rgba(131, 127, 127, 0.539);
+    color: #fff;
+}
+.adminMenu>ul li:hover .adminMenuBtn{
+    color: #fff;
+}
+.adminMenuBtn{
+    text-decoration: none;
+    color: #000; 
+}
+
+
+/* company css: */
+.companyMenu{
+    width: 280px;
+    height: 100%;
+}
+.companyMenu ul{
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-gap: 10px;
+    align-items: center;
+}
+.companyMenu>ul li{
+    list-style: none;
+    width: 70%;
+    padding: 10px 20px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3));
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.companyMenu>ul li:hover{
+    background-color: rgba(131, 127, 127, 0.539);
+    color: #fff;
+}
+.companyMenu>ul li:hover .companyMenuBtn{
+    color: #fff;
+}
+.companyMenuBtn{
+    text-decoration: none;
+    color: #000; 
+}
+
+/* customer css: */
+.customerMenu{
+    width: 280px;
+    height: 100%;
+}
+.customerMenu ul{
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-gap: 10px;
+    align-items: center;
+}
+.customerMenu>ul li{
+    list-style: none;
+    width: 70%;
+    padding: 10px 20px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3));
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.customerMenu>ul li:hover{
+    background-color: rgba(131, 127, 127, 0.539);
+    color: #fff;
+}
+.customerMenu>ul li:hover .customerMenuBtn{
+    color: #fff;
+}
+.customerMenuBtn{
+    text-decoration: none;
+    color: #000;
+}
+
+/* menu open/close css: */
+.activeMenu{
+    opacity: 1;
+    display: inline;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 820px), (max-width: 1025px) and (max-height: 800px) {
+    .Menu {
+        width: 90%;
+        height: auto;
+        margin: 0px auto;
+    }
+    /* admin menu */
+    .adminMenu{
+        width: 100%;
+    }
+    .adminMenu>ul li{
+        width: 60%;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 13px;
+    }
+     /* company menu */
+    .companyMenu{
+        width: 100%;
+    }
+    .companyMenu>ul li{
+        width: 60%;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 13px;
+    }
+    /* customer menu */
+    .customerMenu{
+        width: 100%;
+    }
+    .customerMenu>ul li{
+        width: 60%;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 400px){
+    .Menu {
+        width: 380px;
+        height: auto;
+        margin: 10px auto;
+    }
+     /* admin, company, customer menu */
+    .adminMenu, .companyMenu, .customerMenu{
+        width: 100%;
+    }
+}

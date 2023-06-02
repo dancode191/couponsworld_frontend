@@ -1,0 +1,86 @@
+.CustomerCouponCard {
+	margin: 10px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.custCoupCardImgBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custCoupCardImgBox>img{
+    width: 200px;
+    border-radius: 15px;
+}
+.custCoupCardCategory{
+    text-align: left;
+    font-size: 12px;
+}
+.custCoupCardTitle{
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 20px;
+    background: #8d8d9221;
+    border-radius: 15px;
+}
+.custCoupCardDesc{
+    box-sizing: border-box;
+    text-align: left;
+    padding: 5px;
+    font-size: 15px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5));
+    border-radius: 10px;
+    min-height: 60px;
+    max-width: 200px;
+    overflow-y: scroll;
+}
+.custCoupPricDisc{
+    margin-bottom: 0px;
+}
+.custCoupCardPrice{
+    font-size: 15px;
+    display: inline;
+    margin-bottom: 5px;
+}
+.custCoupCardPriceNum{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.custCoupCardPriceDiscount{
+    text-decoration: line-through;
+    font-size: 15px;
+    margin: 5px 0px 5px 5px;
+}
+.custCoupCardPriceAmount{
+    margin: 0px;
+    line-height: 10px;
+    color: red;
+    font-size: 12px;
+}
+.custCoupCardPriceAmountNum{
+    font-weight: bold;
+    font-size: 16px;
+}
+.custCoupCardPriceSDate{
+    margin-bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+.custCoupCardPriceEDate{
+    margin-top: 0px;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 2px;
+}
+.custCoupDate{
+    font-size: 15px;
+    background-color: #8d8d9221;
+    padding: 0px 5px;
+}
+.custCouponPurchase{
+    margin: 5px 0px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

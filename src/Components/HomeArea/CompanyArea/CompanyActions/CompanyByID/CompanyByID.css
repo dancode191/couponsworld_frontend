@@ -1,0 +1,76 @@
+.CompanyByID {
+	position: relative;
+    height: 100%;
+    width: 250px;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+.coupbyIdImageBox{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.coupbyIdImageBox> img{
+    width: 200px;
+    border-radius: 15px;
+}
+.coupByIdCardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.coupByIdCategory{
+    background-color: #fff;
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+}
+.coupByIdNum{
+    background-color: #fff;
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    align-self: flex-start;
+}
+.coupByIdCardSettings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+.coupByIdTitle{
+    align-self: center;
+    font-size: 20px;
+}
+.coupByIdImg{
+    width: 20px;
+}
+.coupByIdDescrip{
+    font-size: 12px;
+    margin-left: 5px;
+}
+.coupByIdDescripBox{
+    background-color: #8d8d9221;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 0px;
+    font-size: 15px;
+    overflow-y: scroll;
+}
+.coupByIdAmountPrice{
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 0px 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.coupByIdDates{
+    background-color: #8d8d9221;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+}
