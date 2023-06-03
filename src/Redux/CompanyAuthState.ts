@@ -20,8 +20,7 @@ export class AuthState{
             try{
                 this.user = jwtDecode(storedToken);
                 this.token = storedToken;
-                console.log("checking token input: " + this.token);
-                console.log("checking user input: " + this.user);
+      
             }catch(err: any){
                 notificationService.error("erorr decoding token!");
             }
