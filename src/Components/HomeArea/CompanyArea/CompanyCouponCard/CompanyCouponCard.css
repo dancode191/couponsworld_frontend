@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: space-between;
     font-family: 'Poppins', sans-serif;
 }
 .compCoupCardImgBox{
@@ -86,7 +87,6 @@
     margin-top: 5px;
     padding-left: 10px;
     text-align: left;
-    flex-grow: 1;
 }
 
 
