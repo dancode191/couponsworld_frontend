@@ -80,7 +80,7 @@
     font-size: 14px;
     display: flex;
     justify-content: space-around;
-    margin-top: auto;
+    margin-bottom: auto;
 }
 .compCoupCardDates{
     background-color: #8d8d9221;
