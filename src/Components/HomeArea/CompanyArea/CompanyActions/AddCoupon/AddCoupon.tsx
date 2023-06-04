@@ -52,7 +52,7 @@ function AddCoupon(): JSX.Element {
                 <label>Title</label><br />
                 <input className="inputDesign" type="text" placeholder="Enter coupon title" {...register("title",{
                     required: {value: true, message: "you must enter coupon title"},
-                    maxLength: {value: 16, message: "you cant type more then 16 char"}
+                    maxLength: {value: 18, message: "you cant type more then 18 char"}
                 })} /><br />
                 <span className="addCoupError">{formState.errors?.title?.message}</span><br />
 
