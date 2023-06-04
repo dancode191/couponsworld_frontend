@@ -86,7 +86,7 @@
     margin-top: 5px;
     padding-left: 10px;
     text-align: left;
-    justify-self: end;
+    justify-content: flex-end;
 }
 
 
