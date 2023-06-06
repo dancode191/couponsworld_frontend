@@ -46,3 +46,29 @@
 .error{
     color: red;
 }
+
+@media screen and (max-width: 400px) {
+    .loginWelcomeTitle{
+        font-size: 30px;
+    }
+    .loginWelcomeparg{
+        font-size: 15px;
+    }
+    .welcomeScreen{
+        width: 300px;
+        height: 300px;
+    }
+    .loginScreen{
+        width: 200px;
+        height: auto;
+        margin: 5px;
+    }
+    .loginScreen>form label, .loginScreen>form input{
+        margin-left: 5px;
+    }
+    .loginScreen>form button{
+        margin: 10px 0px 5px 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
