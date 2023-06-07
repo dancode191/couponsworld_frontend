@@ -44,9 +44,9 @@ function Login(): JSX.Element {
             </div>
             <div className="loginScreen boxGlassLayer2">
 			    <h2>Login</h2>
-                <form onSubmit={handleSubmit(send)}>
+                <form className="loginForm" onSubmit={handleSubmit(send)}>
                     <label >Email</label><br />
-                    <input type="text" value={email} placeholder="Enter your email" {...register("email",{
+                    <input className="emailInput" type="text" value={email} placeholder="Enter your email" {...register("email",{
                         required: {value: true, message: "you must enter your email"},
                         // this pattern is for making sure the email format is valid
                         pattern: {value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, message: "email format is not valid"}
@@ -54,7 +54,7 @@ function Login(): JSX.Element {
                     <span className="error">{formState.errors?.email?.message}</span><br />
 
                     <label >Password</label><br />
-                    <input type="password" value={password} placeholder="Enter your password" {...register("password",{
+                    <input className="passInput" type="password" value={password} placeholder="Enter your password" {...register("password",{
                         required: {value: true, message: "you must enter a password"},
                         minLength: {value: 3, message: "password must be at least 3 chars"},
                         maxLength: {value: 15, message: "password must be not more then 15 chars"}
@@ -62,7 +62,7 @@ function Login(): JSX.Element {
                     <span className="error">{formState.errors?.password?.message}</span><br />
 
                     <label >Login as:  </label>
-                    <select id="type" {...register("type",{
+                    <select className="loginInput" id="type" {...register("type",{
                         required: {value: true, message: "you must select type of user"}
                     })}>
                         <option value="ADMIN">ADMIN</option>
