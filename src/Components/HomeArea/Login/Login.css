@@ -47,12 +47,15 @@
     color: red;
 }
 
+/* Responsive */
 @media screen and (max-width: 400px) {
     .loginWelcomeTitle{
         font-size: 25px;
+        margin-left: 10px;
     }
     .loginWelcomeparg{
         font-size: 15px;
+        margin-left: 10px;
     }
     .welcomeScreen{
         width: 200px;
