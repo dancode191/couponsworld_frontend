@@ -150,8 +150,8 @@ function NavBar(): JSX.Element {
 			<div className="loginOutNavBar">
                 {!(admin || company || customer) && <>
                     <NavLink className="loginBtn navBarLink" to="/login">Login</NavLink>
-                    <NavLink className="loginBtn navBarLink" to="/customerSignUp">Customer Sign-Up</NavLink>
-                    <NavLink className="loginBtn navBarLink" to="/companySignUp">Company Sign-Up</NavLink>
+                    <NavLink className="navBarLink" to="/customerSignUp">Customer Sign-Up</NavLink>
+                    <NavLink className="navBarLink" to="/companySignUp">Company Sign-Up</NavLink>
                     
                 </>}
                 {(admin || company || customer) && <>
