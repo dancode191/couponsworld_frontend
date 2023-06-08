@@ -10,11 +10,13 @@
     font-family: 'Bevan', cursive;
     color: rgba(114, 114, 114, 0.461);
     font-size: 50px;
+    margin-bottom: 0px;
 }
 .loginWelcomeparg{
     font-family: 'Bevan', cursive;
     color: rgba(114, 114, 114, 0.461);
     font-size: 20px;
+    margin-top: 0px;
 }
 .welcomeScreen{
     width: 500px;
@@ -45,17 +47,29 @@
 }
 .error{
     color: red;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.loginInstructions{
+    font-family: 'Bevan', cursive;
+    color: rgba(114, 114, 114, 0.461);
+    font-size: 12px;
+    margin-left: 10px;
+}
+.loginInstructions> span{
+    text-decoration: underline;
+    font-size: 14px;
 }
 
 /* Responsive */
 @media screen and (max-width: 400px) {
     .loginWelcomeTitle{
         font-size: 25px;
-        margin-left: 10px;
+        margin:5px 0px 0px 10px;
     }
     .loginWelcomeparg{
         font-size: 15px;
-        margin-left: 10px;
+        margin: 0px 0px 5px 10px;
     }
     .welcomeScreen{
         width: 200px;
@@ -84,5 +98,17 @@
     }
     .loginForm{
         text-align: center;
+    }
+    .loginInstructions{
+        text-align: left;
+        font-size: 10px;
+        overflow-wrap: break-word;
+        margin: auto 5px;
+    }
+    .loginInstructions> span{
+        font-size: 11px;
+    }
+    .error{
+        font-size: 8px;
     }
 }

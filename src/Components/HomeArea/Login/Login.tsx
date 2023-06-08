@@ -2,8 +2,6 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import CredentialModel from "../../../Models/CredentialModel";
-import { AdminAuthStore, adminLoginAction } from "../../../Redux/AdminAuthState";
-import { CompanyAuthStore } from "../../../Redux/CompanyAuthState";
 import authService from "../../../Services/AuthService";
 import notificationService from "../../../Services/NotificationService";
 import "./Login.css";
@@ -41,6 +39,14 @@ function Login(): JSX.Element {
             <div className="welcomeScreen">
                 <h2 className="loginWelcomeTitle">Welcome To Coupons World</h2>
                 <p className="loginWelcomeparg">buy and sell coupons from all categories and prices</p>
+                <p className="loginInstructions">
+                        <span>Login info:</span> <br />
+                        As customer: <br />
+                        customer1@gmail.com <br />
+                        As company: <br />
+                        company1@gmail.com <br />
+                        Password for both: 1234 
+                    </p>
             </div>
             <div className="loginScreen boxGlassLayer2">
 			    <h2>Login</h2>
@@ -71,7 +77,7 @@ function Login(): JSX.Element {
                     </select><br />
             
                     <button className="btnDes" >Login</button>
-                
+                    
                 </form>
             </div>
         </div>

@@ -45,7 +45,7 @@ export function adminAuthReducer(currentState: AuthState = new AuthState, action
     const newState = {...currentState}
 
     switch(action.type){
-        //payload is the token
+        
         case AuthActionType.Login:
             
             newState.token = action.payload;

@@ -56,9 +56,9 @@ function NavBar(): JSX.Element {
 
     return (
         <div className="NavBar boxGlassLayer1">
-            {admin && <>
+            {/* {admin && <>
                 <p className="userName">Welcome: <span className="compNameStyle">Admin</span></p>
-            </>}
+            </>} */}
             {company && <>
                 <p className="userName">Welcome: <span className="compNameStyle">{CompanyAuthStore.getState().user.name}</span></p>
             </>}
@@ -80,12 +80,11 @@ function NavBar(): JSX.Element {
                 <div className="navBarRouting">
 
                     {/* admin navbar: */}
-                    {/* {admin && <>
-                <p className="userName">Welcome: <span className="compNameStyle">Admin</span></p>
-            </>} */}
+                    {admin && <>
+                        <p className="userName">Welcome: <span className="compNameStyle">Admin</span></p>
+                    </>}
                     {/* company navbar: */}
                     {company && <>
-                        {/* <p className="userName">Welcome: <span className="compNameStyle">{CompanyAuthStore.getState().user.name}</span></p> */}
                         <div className="companyNavBar">
                             <div className="companysortBy">Sort By:</div>
 
@@ -128,7 +127,6 @@ function NavBar(): JSX.Element {
                     </>}
                     {/* customer navbar: */}
                     {customer && <>
-                        {/* <p className="userName">Welcome: <span className="compNameStyle">{CustomerAuthStore.getState().user.firstName + " " +CustomerAuthStore.getState().user.lastName}</span></p> */}
                         <div className="customerNavBar">
                             <div className="customersortBy">Sort your coupons By:</div>
 
