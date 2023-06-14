@@ -56,9 +56,9 @@
 
 
 /* Responsive */
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 915px) and (min-height: 1000px) {
     .companyCategories ul{
-        gap: 30px;
+        gap: 20px;
     }
     .icon{
         width: 35px;

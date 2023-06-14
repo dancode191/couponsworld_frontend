@@ -56,9 +56,6 @@ function NavBar(): JSX.Element {
 
     return (
         <div className="NavBar boxGlassLayer1">
-            {/* {admin && <>
-                <p className="userName">Welcome: <span className="compNameStyle">Admin</span></p>
-            </>} */}
             {company && <>
                 <p className="userName">Welcome: <span className="compNameStyle">{CompanyAuthStore.getState().user.name}</span></p>
             </>}

@@ -1,7 +1,7 @@
 .NavBar {
     margin: 10px;
     padding: 0px;
-    height: 60px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -28,9 +28,14 @@
     justify-content: flex-start;
     align-items: center;
     width: 600px;
+    margin-left: 10px;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.userName>span{
+    margin-left: 5px;
+    font-size: 14px;
 }
 .compNameStyle{
     font-family: 'Poppins', sans-serif;
@@ -237,13 +242,19 @@
 
 /* Responsive */
 @media screen and (min-width: 1300px){
+    .NavBar {
+        height: 100px;
+    }
     .navBarRouting{
         justify-content: space-between;
     }
     .userName{
-        width: 250px;
+        width: 350px;
         font-size: 20px;
-        margin: 20px;
+        margin: 0px 0px 10px 10px;
+    }
+    .userName>span{
+        font-size: 16px;
     }
     .compNameStyle{
         font-size: 16px;
@@ -256,9 +267,10 @@
     }
 }
 
-@media screen and (max-width: 820px), (max-height: 800px){
+/* @media screen and (max-width: 820px), (max-height: 800px){ */
+@media screen and (max-width: 915px) and (min-height: 1000px){
     .loginOutNavBar {
-        width: 30%;
+        width: 50%;
     }
     .navBarLink{
         padding: 3px 6px;
@@ -316,14 +328,17 @@
         left: -3%;
     }
 }
-@media screen and (max-height: 800px){
+@media screen and (max-height: 850px){
     /* company and customer navbar */
     .companyCategories, .customerCategories {
         width: 820px;
         left: 10%;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
+    .NavBar {
+        height: 70px;
+    }
     .navBarRouting{
         width: 90%;
     }
@@ -361,11 +376,14 @@
     }
     .userName{
         width: 350px;
-        font-size: 12px;
+        font-size: 14px;
         margin: 5px;
         overflow: hidden;
         word-wrap: break-word;
         text-align: center;
+    }
+    .userName>span{
+        font-size: 12px;
     }
     .compNameStyle{
         font-size: 12px;
@@ -477,9 +495,12 @@
 }
 @media screen and (max-height: 450px){
     .userName{
-        font-size: 12px;
-        margin: 5px;
+        font-size: 14px;
+        margin: 10px;
         text-align: center;
+    }
+    .userName>span{
+        font-size: 12px;
     }
     .compNameStyle{
         font-size: 12px;

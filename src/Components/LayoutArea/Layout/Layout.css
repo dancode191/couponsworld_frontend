@@ -37,11 +37,12 @@
 		flex-direction: column;
 	}
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
     .layoutMain {
 		position: relative;
 		width: 100%;
-		height: 80%- 80px;
+		height: 100%;
+		/* height: 80%- 80px; */
 		display: flex;
 		flex-direction: column;
 	}
