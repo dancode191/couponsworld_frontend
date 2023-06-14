@@ -41,6 +41,7 @@ function Login(): JSX.Element {
                 <p className="loginWelcomeparg">buy and sell coupons from all categories and prices</p>
                 <p className="loginInstructions">
                         <span>Login info:</span> <br />
+                        You can sign-up for new account or log-in:<br />
                         As customer: <br />
                         customer1@gmail.com <br />
                         As company: <br />
