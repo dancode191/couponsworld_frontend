@@ -236,6 +236,20 @@
 
 
 /* Responsive */
+@media screen and (min-width: 1300px){
+    .navBarRouting{
+        justify-content: space-between;
+    }
+    .userName{
+        width: 250px;
+        font-size: 20px;
+        margin: 20px;
+    }
+    .compNameStyle{
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 1100px){
     .companyNavBar, .customerNavBar {
         gap: 25px;
