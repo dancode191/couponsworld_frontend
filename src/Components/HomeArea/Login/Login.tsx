@@ -51,6 +51,7 @@ function Login(): JSX.Element {
             </div>
             <div className="loginScreen boxGlassLayer2">
 			    <h2>Login</h2>
+                <p className="loginNote">*First login might take ~3 min due to DB hosting sleep time</p>
                 <form className="loginForm" onSubmit={handleSubmit(send)}>
                     <label >Email</label><br />
                     <input className="emailInput" type="text" value={email} placeholder="Enter your email" {...register("email",{

@@ -62,7 +62,7 @@ function NavBar(): JSX.Element {
             {customer && <>
                 <p className="userName">Welcome: <span className="compNameStyle">{CustomerAuthStore.getState().user.firstName + " " + CustomerAuthStore.getState().user.lastName}</span></p>
             </>}
-            <div className="test">
+            <div className="navbarBox">
                 {(admin || company || customer) && <>
                     {/* menu open/close button */}
                     <div className="mainMenuBtn"
@@ -125,7 +125,7 @@ function NavBar(): JSX.Element {
                     {/* customer navbar: */}
                     {customer && <>
                         <div className="customerNavBar">
-                            <div className="customersortBy">Sort your coupons By:</div>
+                            <div className="customersortBy">Sort By:</div>
 
                             <button onClick={function showCategories() {
                                 const cateBar = document.querySelector(".customerCategories");
